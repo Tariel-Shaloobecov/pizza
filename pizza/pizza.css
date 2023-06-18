@@ -1,0 +1,124 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body, h1,h2,h3,h4,h5,h6, div, p, ul{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.header_nav{
+        display: none;
+    }
+.pizza0{
+text-transform: uppercase;
+font-size: 22px;
+line-height: 26px;
+color: black;
+letter-spacing: 0.04em;
+    }
+    .welkome_section{
+        background-image: url(image/img/main.jpg);
+        height: 672px;
+        width: 100%;
+        background-position-x: 50%;
+        background-position-y: 100%;
+        color: black;
+        padding: 107px 22px 187px;
+        background: no-repeat;
+    }
+    .welkome_section_content{
+top: 110px;
+background: rgba(255, 255, 255, 0);
+padding: 57px 35px 76px;
+box-shadow:  -4px 4px 20px rgba(68, 33, 0, 25);
+    }
+    .head1{
+        font-size: 25px;
+        color: red;
+text-transform: uppercase;
+    }
+    .text{
+        font-size: 18px;
+        letter-spacing: 0.04em;
+        line-height: 32px;
+        padding-top: 30px;
+    }
+    .section_carts{
+        padding: 15px 17px 65px;
+    }
+    .cart{
+        background-image: url(image/img/kombo.png);
+        margin-top: 23px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 26px 0px 244px 42px;
+        opacity: 0.95s;
+    }
+    .cart_name{
+        font-size: 26px;
+        color: white;
+        line-height: 31px;
+        text-transform: 0.04em;
+        background-color: rgba(86, 100, 92, 0.8);
+        border: 2px solid #fff;
+        padding: 5px;
+    }
+    .footer{
+        background: linear-gradient(rgb(230, 241, 83), rgb(81, 13, 200));
+
+    }
+    .footer_name{
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: black;
+    }
+    .footer_text{
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: black;
+        margin-top: 19px;
+    }
+    @media(min-widht: 376px){
+.header{
+    padding: 28px  52px 28px 52px;
+}
+.pizza1{
+    display: block;
+
+}
+.pizza0{
+    font-size: 28px;
+    line-height: 34px;
+}
+.pizza2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.pizza3{
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 57px;
+    letter-spacing: 0.04em;
+}
+
+    }
+    

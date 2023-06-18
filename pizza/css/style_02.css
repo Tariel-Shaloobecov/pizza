@@ -1,0 +1,258 @@
+ :root{
+    --font-weight-2: 700;
+    --font-weight-1: 400;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: var(--font-weight-1);
+}
+body, h1, h2, h3, h4, h5, h6, div, p, ul, ol{ 
+    padding: 0;
+    margin: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 375px; */
+}
+
+.header__nav{
+    display: none;
+    
+}
+.header__title {
+    text-transform: uppercase;
+    font-weight: var(--font-weight-1);
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #000;
+}
+.welkome-section {
+    background-image: url(../img_02/welPizza.jpg);
+    height: 672px;
+    width: 100vw;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    color: #000000;
+    padding: 107px 22px 187px;
+}
+.welkome-section__content {
+    top: 110px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: -4px 4px 20px rgba(68, 33, 33, 0.25);
+    padding: 57px 35px 76px;
+}
+.heading-1 {
+    font-weight: var(--font-weight-1);
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    
+}
+.text {
+    font-weight: var(--font-weight-1);
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    padding-top: 31px;
+}
+.section-carts {
+    padding: 15px 17px 65px;
+}
+.cart {
+    background-image: url(../img_02/boxEat.jpg);
+    margin-top: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 26px 0px 244.12px 42px;
+    opacity: 0.95;
+}
+.cart-name {
+    color: #fff;
+    font-weight: var(--font-weight-2);
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+    background-color: rgba(71, 97, 83, 0.8);
+    border: 2px solid #fff; /* Добавляем границу тексту */
+    padding: 5px;
+}
+.footer {
+    background: linear-gradient(rgb(164, 175, 15), rgb(81, 13, 200));
+    padding: 66px 17px;
+    
+    margin-top: -30px;
+}
+.footer__name {
+    font-weight: var(--font-weight-1);
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.footer-text {
+    font-weight: var(--font-weight-1);
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-top: 19px;
+}
+.footer-text__label {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: #919294;
+    margin-top: 38px;
+}
+
+
+
+@media (min-width: 376px) {
+    .header {
+        padding: 28px 52px 28px 42px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .header__nav {
+        display: block;
+    }
+
+    .header__title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .header__list {
+        font-size: 16px;
+        line-height: 19px;
+        padding-left: 57px;
+        letter-spacing: 0.04em;
+    }
+    .welkome-section{
+        height: 1023px;
+        padding: 267px 122px 228px 141px;
+        margin: 0;
+        background-size: cover;
+        
+    }
+    .welkome-section__content{
+        padding: 56px 62px 61px;
+        margin: 0;
+    }
+    .heading-1{
+        font-size: 18px;
+        margin: 0;
+        
+    }
+    .section-carts{
+        padding: 110px 206px 100px 430px;
+        display: grid;
+        grid-template-columns: 264px 200px 190px 440px;
+        grid-template-rows: 306px 310px 300px;
+        gap: 28px; /* отсутпы между детьми*/
+        background: linear-gradient(rgb(239, 6, 6), rgb(168, 154, 5));
+        border: 25px green solid;
+    }
+    .cart{
+        margin: 0;
+        padding: 25px 0px 0px 42px;
+        
+    }
+    .cart:nth-child(1){
+        background-image: url(../img_02/boxEat.jpg);
+        grid-column: 1/3; /* столбец 1 */
+        grid-row: 1;  /* строка 1 */
+    }
+    .cart:nth-child(2){
+        background-image: url(../img_02/bl1Pizza.jpg);
+        grid-column: 3/5;
+        grid-row: 1;
+    }
+    .cart:nth-child(3){
+        background-image: url(../img_02/zakuski.jpg);
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+    .cart:nth-child(4){
+        background-image: url(../img_02/desert.jpg);
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .cart:nth-child(5){
+        background-image: url(../img_02/drink.jpg);
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .cart:nth-child(6){
+        background-image: url(../img_02/sushi.jpg);
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+
+   
+}
+.header__menu :hover{
+color: red;
+
+}
+.header__list{
+    border: 5px black solid;
+}
+.naruto_text{
+    text-align: center;
+    font-size: 30px;
+    margin: -30px;
+    color: rgb(236, 7, 7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    background-image: url(../img_02/8c4533174808912e3fe200bef89749df.png);
+    font-size: 30px;
+    
+}
+.cart:hover{ 
+    transition: all 5s;
+
+    transform:  scale(1.2) rotate(360deg);
+}
+.header__title{
+    color: red;
+}
+.ok{
+    text-align: center;
+    margin: -0px;
+    border: 5px black solid;
+    background-color: gold;
+}
